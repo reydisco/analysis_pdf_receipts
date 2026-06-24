@@ -1,0 +1,67 @@
+[
+  {
+    "bank_id": "sberbank",
+    "bank_name": "Сбербанк",
+    "keywords": [
+      "сбербанк",
+      "sberbank",
+      "сбербанка",
+      "перевод по сбп",
+      "номер операции в сбп",
+      "перевод клиенту сбербанка"
+    ],
+    "expected_producers": ["sberbank", "oracle", "itext"],
+    "forbidden_producers": ["microsoft print to pdf", "microsoft word", "libreoffice", "canva", "photoshop"],
+    "required_fields": ["сумма", "дата", "статус"],
+    "status_keywords": [
+      "успешно",
+      "выполнено",
+      "исполнено",
+      "перевод",
+      "чек по операции",
+      "перевод по сбп"
+    ],
+    "merchant_keywords": ["получател", "отправител", "плательщик", "банк получателя"],
+    "expected_font_substr": "Arial",
+    "expected_font_types": ["Type0", "Type1", "TrueType", "CIDFontType0", "CIDFontType2"],
+    "max_font_count": 5,
+    "expected_pdf_versions": ["1.4", "1.5", "1.6", "1.7"],
+    "known_sample_file_md5": [
+      "4174fbc1751aca6429f02d6e242495f4",
+      "d58ed0dd3fc9cc874d93f84c2f9ec653",
+      "af42360ea1c2174abe507fea8260f553"
+    ],
+    "forbidden_file_md5": [
+      "4d2d2120d4fb4327ba49a462ddc680e6"
+    ],
+    "fake_generator_stream_hashes": [
+      "128529ba4df92e87",
+      "4e5c2d8e7667e209",
+      "ca44f0f5d552aefd"
+    ]
+  },
+  {
+    "bank_id": "tinkoff",
+    "bank_name": "Тинькофф",
+    "keywords": ["тинькофф", "tinkoff", "t-bank", "tbank"],
+    "expected_producers": ["tinkoff", "itext", "oracle"],
+    "forbidden_producers": ["microsoft print to pdf", "microsoft word", "libreoffice", "canva", "photoshop"],
+    "required_fields": ["сумма", "дата", "статус"],
+    "status_keywords": ["успешно", "выполнено", "исполнено", "перевод", "чек по операции"],
+    "merchant_keywords": ["получател", "отправител"],
+    "expected_pdf_versions": ["1.4", "1.5", "1.6", "1.7"],
+    "max_font_count": 8
+  },
+  {
+    "bank_id": "vtb",
+    "bank_name": "ВТБ",
+    "keywords": ["втб", "vtb"],
+    "expected_producers": ["vtb", "itext", "oracle"],
+    "forbidden_producers": ["microsoft print to pdf", "microsoft word", "libreoffice", "canva", "photoshop"],
+    "required_fields": ["сумма", "дата", "статус"],
+    "status_keywords": ["успешно", "выполнено", "исполнено", "перевод", "чек по операции"],
+    "merchant_keywords": ["получател", "отправител"],
+    "expected_pdf_versions": ["1.4", "1.5", "1.6", "1.7"],
+    "max_font_count": 8
+  }
+]
